@@ -1,0 +1,19 @@
+# Sports Club API - Direct Dependencies
+# This file defines project dependencies (input for pip-tools)
+# Use: pip-compile requirements.in --generate-hashes
+
+django>=5.0
+django-cors-headers>=4.0
+django-environ>=0.10
+django-json-widget>=1.0
+django-nanoid-field>=0.1
+django-ninja>=1.0
+django-ratelimit>=4.0
+pydantic[email]>=2.0
+psycopg[binary,pool]>=3.0
+whitenoise>=6.0
+
+# Development and Testing (optional)
+pip-tools>=7.0
+pytest>=7.0
+pytest-django>=4.5

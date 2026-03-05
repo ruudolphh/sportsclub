@@ -1,0 +1,95 @@
+services:
+
+  postgres:
+    image: postgres:18-trixie
+  # build:
+  #   context: .
+  #   dockerfile: docker/postgres/Dockerfile
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h localhost -U ${POSTGRES_USER}"]
+      interval: 5s
+      retries: 5
+
+  app-blue:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      SECRET_KEY: ${SECRET_KEY}
+      DEBUG: ${DEBUG:-False}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1}
+      DEPLOYMENT_COLOR: blue
+    expose:
+      - "8080"
+    networks:
+      - default
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/openapi.json"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  app-green:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      SECRET_KEY: ${SECRET_KEY}
+      DEBUG: ${DEBUG:-False}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1}
+      DEPLOYMENT_COLOR: green
+    expose:
+      - "8080"
+    networks:
+      - default
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/openapi.json"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8000:80"
+    networks:
+      - default
+    depends_on:
+      - app-blue
+      - app-green
+
+volumes:
+  postgres:
+
+networks:
+  default:

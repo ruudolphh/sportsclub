@@ -1,0 +1,47 @@
+version: 2
+updates:
+  # Python dependency management
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      # Check for updates weekly (Monday 4 AM UTC)
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    
+    # Maximum 3 pull requests open at a time
+    open-pull-requests-limit: 3
+    
+    # Automatic security update PRs
+    # Creates emergency PR for known vulnerabilities
+    allow:
+      - dependency-type: "all"
+    
+    # Update strategy: increase version numbers
+    # 1.0.0 → 2.0.0 (allows major version bumps)
+    versioning-strategy: "increase"
+    
+    # Assign reviewers
+    reviewers:
+      - "admin"  # Replace with actual team/person
+    
+    # Add labels to PRs
+    labels:
+      - "dependencies"
+      - "python"
+    
+    # Commit message formatting
+    commit-message:
+      prefix: "chore: "
+      include: "scope"
+    
+    # Create separate PR for security updates
+    security-updates-only: false
+    
+    # Ignore certain packages (if needed)
+    # Example: ignore beta/pre-release versions
+    ignore: []
+    
+    # Configure branch targeting and protection
+    # Pull requests against main branch
+    target-branch: "main"
