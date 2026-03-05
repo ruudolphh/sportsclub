@@ -1,0 +1,70 @@
+[
+  {
+    "model": "people.coach",
+    "pk": 1,
+    "fields": {
+      "public_id": "coach_m_vasco",
+      "first_name": "María",
+      "last_name": "Vasco",
+      "email": "maria.vasco@ceatletisme.cat",
+      "phone": "+34 612 001 001",
+      "date_of_birth": "1975-12-26",
+      "address": 10,
+      "certification": "entrenador_nacional",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.coach",
+    "pk": 2,
+    "fields": {
+      "public_id": "coach_a_serrano",
+      "first_name": "Antonio",
+      "last_name": "Serrano",
+      "email": "antonio.serrano@ceatletisme.cat",
+      "phone": "+34 612 001 002",
+      "date_of_birth": "1970-07-22",
+      "address": 11,
+      "certification": "entrenador_nacional",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.coach",
+    "pk": 3,
+    "fields": {
+      "public_id": "coach_p_carner",
+      "first_name": "Pere",
+      "last_name": "Carner",
+      "email": "pere.carner@ceatletisme.cat",
+      "phone": "+34 612 001 003",
+      "date_of_birth": "1968-05-10",
+      "address": 12,
+      "certification": "tecnico_deportivo_grado_superior",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.coach",
+    "pk": 4,
+    "fields": {
+      "public_id": "coach_r_moreno",
+      "first_name": "Rosa",
+      "last_name": "Moreno",
+      "email": "rosa.moreno@ceatletisme.cat",
+      "phone": "+34 612 001 004",
+      "date_of_birth": "1982-09-18",
+      "address": 4,
+      "certification": "tecnico_deportivo_grado_medio",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  }
+]

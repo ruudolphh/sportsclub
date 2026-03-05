@@ -1,0 +1,192 @@
+[
+  {
+    "model": "people.athlete",
+    "pk": 1,
+    "fields": {
+      "public_id": "ath_m_katir",
+      "first_name": "Mohamed",
+      "last_name": "Katir",
+      "email": "mohamed.katir@athletics.es",
+      "phone": "+34 600 001 001",
+      "date_of_birth": "1998-02-17",
+      "address": 5,
+      "height": 183.0,
+      "weight": 63.0,
+      "jersey_number": 1,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 2,
+    "fields": {
+      "public_id": "ath_a_peleteiro",
+      "first_name": "Ana",
+      "last_name": "Peleteiro",
+      "email": "ana.peleteiro@athletics.es",
+      "phone": "+34 600 001 002",
+      "date_of_birth": "1995-12-02",
+      "address": 6,
+      "height": 172.0,
+      "weight": 58.0,
+      "jersey_number": 2,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 3,
+    "fields": {
+      "public_id": "ath_j_diaz",
+      "first_name": "Jordan",
+      "last_name": "Díaz",
+      "email": "jordan.diaz@athletics.es",
+      "phone": "+34 600 001 003",
+      "date_of_birth": "2001-03-23",
+      "address": 7,
+      "height": 181.0,
+      "weight": 74.0,
+      "jersey_number": 3,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 4,
+    "fields": {
+      "public_id": "ath_m_perez",
+      "first_name": "María",
+      "last_name": "Pérez",
+      "email": "maria.perez@athletics.es",
+      "phone": "+34 600 001 004",
+      "date_of_birth": "1996-04-29",
+      "address": 8,
+      "height": 168.0,
+      "weight": 52.0,
+      "jersey_number": 4,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 5,
+    "fields": {
+      "public_id": "ath_a_martinez",
+      "first_name": "Asier",
+      "last_name": "Martínez",
+      "email": "asier.martinez@athletics.es",
+      "phone": "+34 600 001 005",
+      "date_of_birth": "2000-04-25",
+      "address": 9,
+      "height": 186.0,
+      "weight": 78.0,
+      "jersey_number": 5,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 6,
+    "fields": {
+      "public_id": "ath_m_garcia",
+      "first_name": "Marta",
+      "last_name": "García",
+      "email": "marta.garcia@athletics.es",
+      "phone": "+34 600 001 006",
+      "date_of_birth": "1994-05-25",
+      "address": 4,
+      "height": 167.0,
+      "weight": 52.0,
+      "jersey_number": 6,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 7,
+    "fields": {
+      "public_id": "ath_a_martin",
+      "first_name": "Álvaro",
+      "last_name": "Martín",
+      "email": "alvaro.martin@athletics.es",
+      "phone": "+34 600 001 007",
+      "date_of_birth": "1994-06-18",
+      "address": 4,
+      "height": 175.0,
+      "weight": 60.0,
+      "jersey_number": 7,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 8,
+    "fields": {
+      "public_id": "ath_q_llopis",
+      "first_name": "Quique",
+      "last_name": "Llopis",
+      "email": "quique.llopis@athletics.es",
+      "phone": "+34 600 001 008",
+      "date_of_birth": "2002-07-19",
+      "address": 4,
+      "height": 186.0,
+      "weight": 77.0,
+      "jersey_number": 8,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 9,
+    "fields": {
+      "public_id": "ath_c_robles",
+      "first_name": "Carolina",
+      "last_name": "Robles",
+      "email": "carolina.robles@athletics.es",
+      "phone": "+34 600 001 009",
+      "date_of_birth": "1994-06-05",
+      "address": 4,
+      "height": 171.0,
+      "weight": 54.0,
+      "jersey_number": 9,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "people.athlete",
+    "pk": 10,
+    "fields": {
+      "public_id": "ath_b_toimil",
+      "first_name": "Belén",
+      "last_name": "Toimil",
+      "email": "belen.toimil@athletics.es",
+      "phone": "+34 600 001 010",
+      "date_of_birth": "1994-12-15",
+      "address": null,
+      "height": 186.0,
+      "weight": 95.0,
+      "jersey_number": 10,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  }
+]

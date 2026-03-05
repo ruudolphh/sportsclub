@@ -1,0 +1,194 @@
+[
+  {
+    "model": "core.address",
+    "pk": 1,
+    "fields": {
+      "public_id": "addr_son_moix",
+      "line1": "Camí dels Reis, s/n",
+      "line2": "Son Moix",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07011",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 2,
+    "fields": {
+      "public_id": "addr_principes",
+      "line1": "Carrer de l'Uruguai, s/n",
+      "line2": "Polígon de Llevant",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07007",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 3,
+    "fields": {
+      "public_id": "addr_inca",
+      "line1": "Carrer dels Esports, 1",
+      "line2": "Poliesportiu Municipal",
+      "city": "Inca",
+      "state": "Illes Balears",
+      "postal_code": "07300",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 4,
+    "fields": {
+      "public_id": "addr_campus_uib",
+      "line1": "Carretera de Valldemossa, km 7.5",
+      "line2": "Campus UIB - Residència",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07122",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 5,
+    "fields": {
+      "public_id": "addr_ath_01",
+      "line1": "Carrer de Sant Miquel, 45",
+      "line2": "Centre",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07002",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 6,
+    "fields": {
+      "public_id": "addr_ath_02",
+      "line1": "Avinguda de Jaume III, 22",
+      "line2": "",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07012",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 7,
+    "fields": {
+      "public_id": "addr_ath_03",
+      "line1": "Carrer des Born, 18",
+      "line2": "",
+      "city": "Ciutadella",
+      "state": "Illes Balears",
+      "postal_code": "07760",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 8,
+    "fields": {
+      "public_id": "addr_ath_04",
+      "line1": "Carrer de sa Lluna, 33",
+      "line2": "",
+      "city": "Sóller",
+      "state": "Illes Balears",
+      "postal_code": "07100",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 9,
+    "fields": {
+      "public_id": "addr_ath_05",
+      "line1": "Passeig Marítim, 12",
+      "line2": "Port d'Alcúdia",
+      "city": "Alcúdia",
+      "state": "Illes Balears",
+      "postal_code": "07400",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 10,
+    "fields": {
+      "public_id": "addr_coach_01",
+      "line1": "Carrer de la Riera, 8",
+      "line2": "Santa Catalina",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07013",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 11,
+    "fields": {
+      "public_id": "addr_coach_02",
+      "line1": "Carrer del Sindicat, 74",
+      "line2": "",
+      "city": "Palma",
+      "state": "Illes Balears",
+      "postal_code": "07002",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "core.address",
+    "pk": 12,
+    "fields": {
+      "public_id": "addr_coach_03",
+      "line1": "Plaça Major, 5",
+      "line2": "",
+      "city": "Manacor",
+      "state": "Illes Balears",
+      "postal_code": "07500",
+      "country": "Spain",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  }
+]

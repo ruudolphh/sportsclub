@@ -1,0 +1,38 @@
+[
+  {
+    "model": "inventory.venue",
+    "pk": 1,
+    "fields": {
+      "public_id": "ven_son_moix",
+      "name": "Estadi Atlètic Son Moix",
+      "address": 1,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "inventory.venue",
+    "pk": 2,
+    "fields": {
+      "public_id": "ven_principes",
+      "name": "Poliesportiu Príncipes de España",
+      "address": 2,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "inventory.venue",
+    "pk": 3,
+    "fields": {
+      "public_id": "ven_inca",
+      "name": "Poliesportiu Municipal d'Inca",
+      "address": 3,
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
