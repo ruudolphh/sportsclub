@@ -1,16 +1,14 @@
-# Production override with minimal changes
-# Uses the compose override pattern to adjust ports and add restart policies
-
 services:
   postgres:
     restart: always
     ports: []
 
   app-blue:
+    image: TU_USUARIO/sportsclub:latest
     restart: always
     
-
   app-green:
+    image: TU_USUARIO/sportsclub:latest
     restart: always
 
   nginx:
