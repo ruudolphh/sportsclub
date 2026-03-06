@@ -21,8 +21,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
+          file: docker/app/Dockerfile
           push: true
           tags: prudolph1/sportsclub:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
