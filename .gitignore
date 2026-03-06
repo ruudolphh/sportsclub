@@ -95,7 +95,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .env.*
 !.env.example
 .venv/
@@ -156,3 +155,6 @@ media/
 notes.md
 TODO.md
 
+# Environment files
+.env
+.env.production

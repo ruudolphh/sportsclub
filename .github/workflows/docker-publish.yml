@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: sportsclub:latest
+          tags: prudolph1/sportsclub:latest
