@@ -4,11 +4,11 @@ services:
     ports: []
 
   app-blue:
-    image: TU_USUARIO/sportsclub:latest
+    image: ruudolphh/sportsclub:latest
     restart: always
     
   app-green:
-    image: TU_USUARIO/sportsclub:latest
+    image: ruudolphh/sportsclub:latest
     restart: always
 
   nginx:
