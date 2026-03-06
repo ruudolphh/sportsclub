@@ -27,5 +27,3 @@ jobs:
           file: docker/app/Dockerfile
           push: true
           tags: prudolph1/sportsclub:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
