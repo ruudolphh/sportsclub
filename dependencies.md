@@ -319,7 +319,7 @@ jobs:
       # Verify hash integrity
       - name: Verify requirement hashes
         run: |
-          pip install -r requirements.txt --require-hashes
+          pip install -r requirements.txt --require-hashes --allow-unsafe
           echo "✓ All packages verified with hashes"
       
       # Check for known vulnerabilities
@@ -399,7 +399,7 @@ Shows:
 
 ```bash
 # Verify setup locally
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 echo "✓ Hash verification works"
 
 # Manual scan

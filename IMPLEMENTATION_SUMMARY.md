@@ -107,7 +107,7 @@ security:
   name: Security Checks
   steps:
     - name: Verify requirement hashes
-      run: pip install -r requirements.txt --require-hashes
+      run: pip install -r requirements.txt --require-hashes --allow-unsafe
       # Ensures all packages match cryptographic hashes
       
     - name: Check for known vulnerabilities
@@ -123,7 +123,7 @@ security:
 pip install -r requirements.txt
 
 # After (Secure)
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 # ✅ Fails if hash doesn't match
 # ✅ Detects tampering
 # ✅ Blocks compromised packages
@@ -233,7 +233,7 @@ echo "celery>=5.0" >> requirements.in
 pip-compile requirements.in --generate-hashes
 
 # 3. Test locally
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 python manage.py test
 
 # 4. Review and commit
@@ -298,7 +298,7 @@ sportsclub-main/
 ### Installation Command (Secure)
 ```bash
 # This is what CI/CD runs
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 
 # This ensures:
 # ✓ All packages from requirements.txt installed

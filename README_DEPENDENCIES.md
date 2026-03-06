@@ -191,7 +191,7 @@ install 3: Django 6.0.2, Psycopg 3.3.2, Pydantic 2.12.5 (IDENTICAL ✓)
 ```bash
 1. echo "celery>=5.0" >> requirements.in
 2. pip-compile requirements.in --generate-hashes
-3. pip install -r requirements.txt --require-hashes
+3. pip install -r requirements.txt --require-hashes --allow-unsafe
 4. pytest                          # Test
 5. git commit -am "Add celery"
 ```
@@ -267,7 +267,7 @@ Before deployment:
 
 ```
 □ Read: QUICK_REFERENCE.md (5 min)
-□ Test: pip install -r requirements.txt --require-hashes
+□ Test: pip install -r requirements.txt --require-hashes --allow-unsafe
 □ Verify: 28 packages installed successfully
 □ Scan: pip-audit -r requirements.txt (0 vulnerabilities)
 □ CI: All tests pass with --require-hashes flag
@@ -296,7 +296,7 @@ Before deployment:
 **This Week**:
 1. ✅ Read this index (you are here!)
 2. ✅ Read QUICK_REFERENCE.md
-3. ✅ Test locally: `pip install -r requirements.txt --require-hashes`
+3. ✅ Test locally: `pip install -r requirements.txt --require-hashes --allow-unsafe`
 
 **This Month**:
 1. Review [requirements.md](requirements.md)

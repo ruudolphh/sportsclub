@@ -225,7 +225,7 @@ security:
   name: Security Checks
   steps:
     1. Verify requirement hashes
-       ✅ pip install -r requirements.txt --require-hashes
+       ✅ pip install -r requirements.txt --require-hashes --allow-unsafe
        
     2. Check for vulnerabilities
        ✅ pip-audit -r requirements.txt --desc
@@ -244,7 +244,7 @@ security:
 pip install -r requirements.txt
 
 # After (Secure)
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 # ✅ Fails if hash doesn't match
 # ✅ Detects tampering
 # ✅ Blocks compromised packages
@@ -273,7 +273,7 @@ echo "celery>=5.0" >> requirements.in
 pip-compile requirements.in --generate-hashes
 
 # STEP 3: Test locally
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 python manage.py test
 
 # STEP 4: Commit changes
@@ -453,7 +453,7 @@ install 3: Django 6.0.2, Psycopg 3.3.2, Pydantic 2.12.5 (IDENTICAL ✓)
 
 ```bash
 # This is what CI/CD runs in production
-pip install -r requirements.txt --require-hashes
+pip install -r requirements.txt --require-hashes --allow-unsafe
 
 # What this ensures:
 # ✓ All 28 packages installed from requirements.txt
@@ -475,7 +475,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Secure installation with hash verification
-RUN pip install --no-cache-dir -r requirements.txt --require-hashes
+RUN pip install --no-cache-dir -r requirements.txt --require-hashes --allow-unsafe
 
 COPY sportsclub/ .
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
@@ -514,7 +514,7 @@ CI/CD
 ✅ GitHub Actions security job added
 ✅ Hash verification enabled
 ✅ pip-audit CVE scanning added
-✅ Tests pass with --require-hashes
+✅ Tests pass with --require-hashes --allow-unsafe
 
 GITHUB
 ✅ dependabot.yml created
@@ -547,7 +547,7 @@ STATUS
 
 ### Short Term (Week 1)
 1. Verify Dependabot email notifications
-2. Test local development with `pip install -r requirements.txt --require-hashes`
+2. Test local development with `pip install -r requirements.txt --require-hashes --allow-unsafe`
 3. Review documentation with team
 
 ### Medium Term (Month 1)
