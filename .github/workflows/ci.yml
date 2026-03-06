@@ -36,7 +36,7 @@ jobs:
       - name: Verify requirement hashes
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt --require-hashes --allow-unsafe
+          pip install -r requirements.txt --require-hashes
           echo "Ok, All dependencies verified with cryptographic hashes"
 
       - name: Check for known vulnerabilities (pip-audit)
@@ -108,7 +108,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt --require-hashes --allow-unsafe
+          pip install -r requirements.txt --require-hashes
 
       - name: Run migrations
         working-directory: ./sportsclub

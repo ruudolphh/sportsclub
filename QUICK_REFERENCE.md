@@ -5,7 +5,7 @@
 ### Installation
 ```bash
 # Secure installation (production)
-pip install -r requirements.txt --require-hashes --allow-unsafe
+pip install -r requirements.txt --require-hashes
 
 # Development installation
 pip install -r requirements.txt
@@ -19,7 +19,7 @@ pip-sync requirements.txt
 # Add new package
 echo "celery>=5.0" >> requirements.in
 pip-compile requirements.in --generate-hashes
-pip install -r requirements.txt --require-hashes --allow-unsafe
+pip install -r requirements.txt --require-hashes
 pytest                          # Test
 
 # Update single package
@@ -35,7 +35,7 @@ pip-compile --dry-run --upgrade
 ### Security
 ```bash
 # Verify hashes
-pip install -r requirements.txt --require-hashes --allow-unsafe
+pip install -r requirements.txt --require-hashes
 
 # Scan for CVEs
 pip install pip-audit
@@ -65,7 +65,7 @@ Before merging dependency changes:
 ```
 □ Edited requirements.in (NOT requirements.txt)
 □ Ran: pip-compile requirements.in --generate-hashes
-□ Tested locally: pip install -r requirements.txt --require-hashes --allow-unsafe
+□ Tested locally: pip install -r requirements.txt --require-hashes
 □ Ran all tests: pytest -v
 □ No vulnerabilities: pip-audit -r requirements.txt
 □ Hash verification works
@@ -92,7 +92,7 @@ Before merging dependency changes:
 pip-compile requirements.in --generate-hashes
 
 # STEP 4: Test immediately
-pip install -r requirements.txt --require-hashes --allow-unsafe
+pip install -r requirements.txt --require-hashes
 pytest -v
 docker-compose up  # test containers
 
@@ -170,7 +170,7 @@ Vulnerabilities:     0 ⭐
 
 **Production deployment?**
 
-1. Use: `pip install -r requirements.txt --require-hashes --allow-unsafe`
+1. Use: `pip install -r requirements.txt --require-hashes`
 2. Verify: Hash matching before install
 3. Monitor: GitHub Dependabot alerts continuously
 
@@ -209,7 +209,7 @@ A: Test in staging. Update in requirements.in. Merge to main when tests pass.
 ## ✅ You're Good If
 
 ```
-✅ pip install -r requirements.txt --require-hashes --allow-unsafe works
+✅ pip install -r requirements.txt --require-hashes works
 ✅ All 28 packages install successfully
 ✅ pip-audit shows 0 vulnerabilities
 ✅ You understand requirements.in vs requirements.txt
